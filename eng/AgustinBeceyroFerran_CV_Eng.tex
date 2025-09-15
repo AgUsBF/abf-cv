@@ -1,0 +1,187 @@
+\documentclass[a4paper]{../data/myCV}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% uncomment in case you don't want any hyphenation
+\usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+
+% language
+\usepackage[english]{babel}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+\cvname{Agust\'in\\Beceyro Ferr\'an}
+
+\cvjobtitle{Master of Engineering\\Mechanical Engineer}
+
+\cvprofilepic{../data/pics/ID.jpg}
+
+\input{../data/personal_data.tex}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+
+\addtofrontsidebar{
+
+	\profilesection{About Me}
+	\aboutme{
+		I am an engineer with experience in research and development, currently 
+		expanding my skill set with competencies in software development, data 
+		analysis, and agile methodologies.\\
+
+		I have contributed to a variety of engineering projects, including space 
+		propulsion systems, a sounding rocket, a neutron diffractometer, and a 
+		high-pressure electrolyzer.
+		Academic background includes both research and teaching experience.\\
+
+		Fluent in English, demonstrated through successful collaboration with 
+		international, multidisciplinary teams.
+		Committed to continuous professional development, complemented by 
+		postgraduate studies and specialized training.\\
+
+		Currently seeking new professional challenges where I can leverage my 
+		experience, contribute to organizational goals, and continue growing 
+		professionally.
+	}
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Working Experience}
+\begin{cvtable}[3]
+	\cvitem{2021 -- 2025}{R\&D Engineer + Project Manager}{LIA Aerospace}{
+		Coordination of the development of a space propulsion system.
+		Other tasks involve: preliminary orbital mechanics analysis, rocket engine
+		testing, data analysis with Python, writing  and reviewing of technical
+		reports, safety and operations planning at the rocket engine test site.
+	}
+
+	\cvitem{2019 -- 2021}{R\&D Engineer}{LIA Aerospace}{
+		Design, integration, and testing of various flight and ground systems, rocket
+		engine testing, data analysis, preliminary trajectory simulation of a 
+		sounding rocket, writing and reviewing technical reports.
+	}
+
+	\cvitem{2015 -- 2019}{R\&D Engineer}{Centro At\'omico Bariloche - CNEA}{
+		Simulation of neutron diffractometer optics, development of data analysis
+		and	numerical optimization routines, selection of components, writing and
+		reviewing technical reports.
+	}
+
+	\cvitem{2014 -- 2015}{Graduate Fellow}{Centro At\'omico Constituyentes - CNEA}{
+		Recipient of a scholarship for the postgraduate diploma in Nuclear Reactors and 
+		Fuel Cycle at Instituto Dan Beninson.
+	}
+
+	\cvitem{2012 -- 2014}{R\&D Engineer}{Instituto Tecnol\'ogico de Buenos Aires}	{
+		Contributed to two projects: The installation and testing of a high-pressure 
+		electrolyzer in an industrial complex, and the design, construction, and testing 
+		of a small satellite propulsion system.\\
+		Engaged in academic activities as a Teaching Assistant, co-advisor for a
+		Mechanical Engineering thesis project, and mentor for interns.
+	}
+	
+	\cvitem{2008 -- 2012}{R\&D Intern}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Design, construction, and testing of prototypes at the Hydrogen Laboratory of
+		the Department of Mechanical Engineering.
+	}
+	
+	\cvitem{2007 -- 2008}{Offset Printer Technician}{Gr\'afica ECO}{
+		Machines setup, calibration, operation, and maintenance.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Education}
+\begin{cvtable}[1.5]
+	\cvitem{2024 -- }{Systems Analyst Degree}{Escuela Da Vinci}{
+		Partial average: 9.9/10.\\
+	}
+
+	\cvitem{2017 -- 2019}{Master in Engineering}{Instituto Balseiro}{
+		Focus: Neutron Optics.
+		Average: 9.6/10.\\
+		Thesis: Conceptual design and performance estimation of the ANDES	neutron
+		powder difractometer mode.
+	}
+
+	\cvitem{2014}{Postgraduate Diploma}{Instituto Dan Beninson}{
+		Focus: Nuclear Reactors and Fuel Cycle.
+		Average: 9.6/10.\\
+		Thesis: Analysis of different dose calculation methods in neutron capture
+		therapies using MCNP.
+	}
+
+	\cvitem{2005 -- 2012}{Mechanical Engineering}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Best 2012 Mechanical Engineering Thesis Award.
+		Average: 7.3/10.\\
+		Thesis: Design and construction of a high-pressure electrolyzer.\\
+	}
+		
+	\cvitem{2002 -- 2004}{Bilingual High School}{Balmoral College}{
+		Focus: Natural Sciences.
+		Average: 8.0/10.
+	}
+\end{cvtable}
+
+\vfill
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+	\profilesection{Tech Skills}
+    \input{../data/skills.tex}
+    
+	% Flags from https://github.com/gosquared/flags;
+	\graphicspath{{../data/pics/flags/}}
+	\profilesection{Languages}
+	\skill{\flag{AR.png}}{Spanish}
+	\skill{\flag{GB.png}}{English}
+	\input{../data/english_tests.tex}
+}
+
+
+%-------------------------------------------------------------------------------
+%                                  2nd PAGE
+%-------------------------------------------------------------------------------
+\newpage
+
+\makebacksidebar
+
+\cvsection{Workshops \& Courses}
+\input{../data/workshops.tex}
+
+
+\cvsection{Publications}
+\input{../data/publications.tex}
+
+\end{document}

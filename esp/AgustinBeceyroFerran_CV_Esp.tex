@@ -1,0 +1,189 @@
+\documentclass[a4paper]{../data/myCV}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% uncomment in case you don't want any hyphenation
+% \usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+
+% language
+\usepackage[spanish]{babel}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+\cvname{Agust\'in\\Beceyro Ferr\'an}
+
+\cvjobtitle{Mag\'ister en Ingenier\'ia\\Ingeniero Mec\'anico}
+
+\cvprofilepic{../data/pics/ID.jpg}
+
+\input{../data/personal_data.tex}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+
+\addtofrontsidebar{
+
+	\profilesection{Perfil}
+	\aboutme{
+		Soy un profesional con experiencia en ingenier\'ia e investigaci\'on y 
+		desarrollo.
+		Actualmente, estoy ampliando mi perfil incorporando competencias en 
+		desarrollo de software, an\'alisis de datos y metodolog\'ias \'agiles.\\
+
+		Colabor\'e en diversos proyectos de ingeniería, incluyendo sistemas de 
+		propulsi\'on espacial, un cohete sonda, un difract\'ometro de neutrones y un 
+		electrolizador de alta presi\'on.
+		Adem\'as, mi recorrido en el \'ambito acad\'emico me permiti\'o desarrollar 
+		habilidades tanto en investigaci\'on como en docencia.\\
+
+		El manejo fluido del ingl\'es me ha permitido colaborar con equipos 
+		multidisciplinarios internacionales.
+		Como parte de mi compromiso con el crecimiento continuo, he complementado mi 
+		formaci\'on con estudios de posgrado y diversas capacitaciones.\\
+
+		Busco un nuevo desaf\'io profesional donde pueda aportar mi experiencia y 
+		seguir evolucionando, contribuyendo al logro de los objetivos de la 
+		organizaci\'on.
+	}
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Experiencia Laboral}
+\begin{cvtable}[3]
+	\cvitem{2021 -- 2025}{Ingeniero de I+D + Project Manager}{LIA Aerospace}{
+		Coordinaci\'on del desarrollo de un sistema de propulsi\'on espacial.
+		Otras tareas: an\'alisis preliminar de mec\'anica orbital, pruebas de motores
+		cohete, an\'alisis de datos, redacci\'on y revisi\'on de informes t\'ecnicos,
+		planificaci\'on de seguridad	y operaciones en el sitio de pruebas de motores.
+	}  
+
+	\cvitem{2019 -- 2021}{Ingeniero de I+D}{LIA Aerospace}{
+		Dise\~no, integraci\'on y prueba de sistemas de vuelo y terrestres, prueba de
+		motores cohete, an\'alisis de datos, simulaci\'ones de trayectoria de un
+		cohete sonda, redacci\'on y revisi\'on de informes t\'ecnicos.
+	}
+
+	\cvitem{2015 -- 2019}{Ingeniero de I+D}{Centro At\'omico Bariloche - CNEA}{
+		Simulaci\'on de la \'optica de un difract\'ometro de neutrones, desarrollo de
+		c\'odigo en Python para el an\'alisis de datos y rutinas de optimizaci\'on
+		num\'erica, redacci\'on y revisi\'on de informes t\'ecnicos.
+	}
+
+	\cvitem{2014 -- 2015}{Becario de Posgrado}{Centro At\'omico Constituyentes - CNEA}{
+		Beneficiario de una beca para el posgrado en Reactores Nucleares y su Ciclo 
+		de Combustible del Instituto Dan Beninson.
+	}
+
+	\cvitem{2012 -- 2014}{Ingeniero de I+D}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Colaboraci\'on en dos proyectos: instalaci\'on y prueba de un electrolizador 
+		de alta presi\'on en un complejo industrial, y el dise\~no, construcci\'on y 
+		prueba de un sistema de propulsi\'on para un sat\'elite.\\
+		Participaci\'on en actividades acad\'emicas como ayudante de trabajos pr\'acticos, 
+		co-tutor de tesis de gradoy mentor de pasantes.
+	}
+	
+	\cvitem{2008 -- 2012}{Pasante de I+D}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Dise\~no, construcci\'on y prueba de prototipos en el Laboratorio de
+		Hidr\'ogeno del Departamento de Ingenier\'ia Mec\'anica.
+	}
+	
+	\cvitem{2007 -- 2008}{T\'ecnico en Impresi\'on Offset}{Gr\'afica ECO}{
+		Operaci\'on, calibraci\'on y mantenimiento de impresoras offset.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Educaci\'on}
+\begin{cvtable}[1.5]
+	\cvitem{2024 -- }{Analista de Sistemas}{Escuela Da Vinci}{
+		Promedio parcial: 9.9/10.
+	}
+		
+	\cvitem{2017 -- 2019}{Maestr\'ia en Ingenier\'ia}{Instituto Balseiro}{
+		Foco: \'Optica de Neutrones.
+		Promedio: 9.6/10.\\
+		Tesis: Dise\~no conceptual y estimaci\'on de performance del difract\'ometro
+		de neutrones ANDES para el estudio de muestras en polvo.
+	}
+
+	\cvitem{2014}{Especializaci\'on}{Instituto Dan Beninson}{
+		Reactores Nucleares y su Ciclo de Combustible.
+		Promedio: 9.6/10.\\
+		Tesis: An\'alisis de diferentes formas de c\'alculo de dosis en terapias 
+		por captura neutr\'onica utilizando MCNP.
+	}
+
+	\cvitem{2005 -- 2012}{Ingenier\'ia Mec\'anica}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Premio a mejor tesis de Inger\'ia Mec\'anica 2012.
+		Promedio: 7.3/10.\\
+		Tesis: Dise\~no y construci\'on  de un electrolizador de alta presi\'on.\\
+	}
+		
+	\cvitem{2002 -- 2004}{Bachiller Biling\"ue}{Balmoral College}{
+		Orientacion: Ciencias Naturales.
+		Promedio: 8.0/10.
+	}
+\end{cvtable}
+
+\vfill
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+
+	\profilesection{Herramientas}
+	\input{../data/skills.tex}
+	
+	% Flags from https://github.com/gosquared/flags;
+	\graphicspath{{../data/pics/flags/}}
+	\profilesection{Idiomas}
+	\skill{\flag{AR.png}}{Espa\~nol}
+	\skill{\flag{GB.png}}{Ingl\'es}
+	\input{../data/english_tests.tex}
+}
+
+
+%-------------------------------------------------------------------------------
+%                                  2nd PAGE
+%-------------------------------------------------------------------------------
+\newpage
+
+\makebacksidebar
+
+\cvsection{Cursos}
+\input{../data/workshops.tex}
+
+
+\cvsection{Publicaciones}
+\input{../data/publications.tex}
+
+\end{document}
