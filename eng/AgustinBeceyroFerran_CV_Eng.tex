@@ -1,0 +1,153 @@
+\documentclass[a4paper]{../data/myCV}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% uncomment in case you don't want any hyphenation
+\usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+
+% language
+\usepackage[english]{babel}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+\cvname{Agust\'in\\Beceyro Ferr\'an}
+
+\cvjobtitle{Master of Engineering}
+
+\cvprofilepic{../data/pics/ID.jpg}
+
+\input{../data/personal_data.tex}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+
+\addtofrontsidebar{
+
+	\profilesection{About Me}
+	\aboutme{
+		I am a professional with a strong analytical profile and a growing focus on
+		information technologies.
+		I am currently enhancing my background with skills in software development,
+		data analysis, and agile methodologies.\\
+		
+		I am seeking a new professional challenge where I can contribute to a team,
+		particularly in the implementation of technological solutions.
+	}
+	
+	\profilesection{Tech Skills}
+    \input{../data/skills.tex}
+        
+	\profilesection{Languages}
+	\graphicspath{{../data/pics/flags/}}
+	\skill{\flag{AR.png}}{Spanish}
+	\skill{\flag{GB.png}}{English}
+	\input{../data/english_tests.tex}
+
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Working Experience}
+\begin{cvtable}[3]
+	\cvitem{2021 -- 2025}{R\&D Engineer + Project Manager}{LIA Aerospace}{
+		Coordination of the development of a space propulsion system.
+		Analysis of experimental data using Python.
+		Drafting and reviewing technical reports.
+	}
+
+	\cvitem{2019 -- 2021}{R\&D Engineer}{LIA Aerospace}{
+		Development of physical simulations in Python.
+		Design and testing of flight	and ground systems for a sounding rocket.
+	}
+
+	\cvitem{2015 -- 2019}{R\&D Engineer}{Centro At\'omico Bariloche - CNEA}{
+		Simulation of neutron diffractometer optics.
+		Development of scientific software in Python for data analysis and
+		numerical optimization routines.
+		Drafting and reviewing technical reports.
+	}
+
+	\cvitem{2014 -- 2015}{Graduate Fellow}{Centro At\'omico Constituyentes - CNEA}{
+		Recipient of a scholarship for the postgraduate diploma in Nuclear Reactors
+		and 	Fuel Cycle at Instituto Dan Beninson.
+	}
+
+	\cvitem{2012 -- 2014}{R\&D Engineer}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Design, construction, and testing of a propulsion system for a satellite and
+		a high-pressure hydrogen electrolyzer.
+		Teaching assistant and co-advisor for a thesis project.
+	}
+	
+	\cvitem{2008 -- 2012}{R\&D Intern}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Design, construction, and testing of prototypes at the Hydrogen Laboratory of
+		the Department of Mechanical Engineering.
+	}
+	
+	\cvitem{2007 -- 2008}{Offset Printer Technician}{Gr\'afica ECO}{
+		Machines setup, calibration, operation, and maintenance.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Education}
+\begin{cvtable}[1.5]
+	\cvitem{2024 -- }{Systems Analyst Degree}{Escuela Da Vinci}{
+		Partial average: 9.9/10.\\
+	}
+
+	\cvitem{2017 -- 2019}{Master in Engineering}{Instituto Balseiro}{
+		Focus: Neutron Optics.
+		Average: 9.6/10.\\
+	}
+
+	\cvitem{2014}{Postgraduate Diploma}{Instituto Dan Beninson}{
+		Focus: Nuclear Reactors and Fuel Cycle.
+		Average: 9.6/10.\\
+	}
+
+	\cvitem{2005 -- 2012}{Mechanical Engineering}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Best 2012 Mechanical Engineering Thesis Award.
+		Average: 7.3/10.\\
+	}
+		
+	\cvitem{2002 -- 2004}{Bilingual High School}{Balmoral College}{
+		Focus: Natural Sciences.
+		Average: 8.0/10.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Workshops \& Courses}
+\input{../data/workshops.tex}
+
+\vfill
+
+\end{document}

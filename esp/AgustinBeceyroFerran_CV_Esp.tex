@@ -1,0 +1,153 @@
+\documentclass[a4paper]{../data/myCV}
+
+% improve word spacing and hyphenation
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% enable mathematical syntax for some symbols like \varnothing
+\usepackage{amssymb}
+
+% uncomment in case you don't want any hyphenation
+%\usepackage[none]{hyphenat}
+
+% take care of proper font encoding
+\ifxetexorluatex
+	\usepackage{fontspec}
+	\defaultfontfeatures{Ligatures=TeX}
+\else
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+\fi
+
+% language
+\usepackage[spanish]{babel}
+
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+
+\cvname{Agust\'in\\Beceyro Ferr\'an}
+
+\cvjobtitle{Mag\'ister en Ingenier\'ia}
+
+\cvprofilepic{../data/pics/ID.jpg}
+
+\input{../data/personal_data.tex}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+
+\addtofrontsidebar{
+
+	\profilesection{Perfil}
+	\aboutme{
+		Soy un profesional con perfil anal\'itico y orientaci\'on hacia las
+		tecnolog\'ias de la	informaci\'on.
+		Actualmente me encuentro complementando mi perfil con competencias en el
+		desarrollo de software, an\'alisis de datos y metodolog\'ias \'agiles.\\
+	
+		Busco un nuevo desaf\'io profesional que me permita aportar valor a un
+		equipo, especialmente en la implementaci\'on de soluciones tecnol\'ogicas.
+	}
+	
+	\profilesection{Herramientas}
+	\input{../data/skills.tex}
+
+	\profilesection{Idiomas}
+	\graphicspath{{../data/pics/flags/}}
+	\skill{\flag{AR.png}}{Espa\~nol}
+	\skill{\flag{GB.png}}{Ingl\'es}
+	\input{../data/english_tests.tex}
+	
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Experiencia Laboral}
+\begin{cvtable}[3]
+	\cvitem{2021 -- 2025}{Ingeniero de I+D + Project Manager}{LIA Aerospace}{
+		Coordinaci\'on del desarrollo de un sistema de propulsi\'on espacial.
+		An\'alisis de datos experimentales con Python.
+		Redacci\'on y revisi\'on de informes t\'ecnicos.
+	}  
+
+	\cvitem{2019 -- 2021}{Ingeniero de I+D}{LIA Aerospace}{
+		Elaboraci\'on de simulaci\'ones f\'isicas en Python.
+		Desarrollo y prueba de sistemas de vuelo y terrestres para un cohete sonda.
+	}
+
+	\cvitem{2015 -- 2019}{Ingeniero de I+D}{Centro At\'omico Bariloche - CNEA}{
+		Simulaci\'on \'optica de un difract\'ometro de neutrones.
+		Desarrollo de software cient\'ifico en Python para el an\'alisis de datos y
+		rutinas de optimizaci\'on num\'erica.
+		Redacci\'on y revisi\'on de informes t\'ecnicos.
+	}
+
+	\cvitem{2014 -- 2015}{Becario de Posgrado}{Centro At\'omico Constituyentes - CNEA}{
+		Beneficiario de una beca para el posgrado en Reactores Nucleares y su Ciclo 
+		de Combustible del Instituto Dan Beninson.
+	}
+
+	\cvitem{2012 -- 2014}{Ingeniero de I+D}{Instituto Tecnol\'ogico de Buenos Aires}{	
+		Dise\~no, construcci\'on y prueba de un sistema de propulsi\'on para un
+		sat\'elite y un equipo electrolizador de hidr\'ogeno a alta presi\'on.
+		Ayudante de trabajos pr\'acticos y co-tutor de tesis.
+	}
+	
+	\cvitem{2008 -- 2012}{Pasante de I+D}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Dise\~no, construcci\'on y prueba de prototipos en el Laboratorio de
+		Hidr\'ogeno del Departamento de Ingenier\'ia Mec\'anica.
+	}
+	
+	\cvitem{2007 -- 2008}{T\'ecnico en Impresi\'on Offset}{Gr\'afica ECO}{
+		Operaci\'on, calibraci\'on y mantenimiento de impresoras offset.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Educaci\'on}
+\begin{cvtable}[1.5]
+	\cvitem{2024 -- }{Analista de Sistemas}{Escuela Da Vinci}{
+		Promedio parcial: 9.9/10.\\
+	}
+		
+	\cvitem{2017 -- 2019}{Maestr\'ia en Ingenier\'ia}{Instituto Balseiro}{
+		Foco: \'Optica de Neutrones.
+		Promedio: 9.6/10.\\
+	}
+
+	\cvitem{2014}{Especializaci\'on}{Instituto Dan Beninson}{
+		Reactores Nucleares y su Ciclo de Combustible.
+		Promedio: 9.6/10.\\
+	}
+
+	\cvitem{2005 -- 2012}{Ingenier\'ia Mec\'anica}{Instituto Tecnol\'ogico de Buenos Aires}{
+		Premio a mejor tesis de Inger\'ia Mec\'anica 2012.
+		Promedio: 7.3/10.\\
+	}
+		
+	\cvitem{2002 -- 2004}{Bachiller Biling\"ue}{Balmoral College}{
+		Foco: Ciencias Naturales.
+		Promedio: 8.0/10.
+	}
+\end{cvtable}
+
+\vfill
+
+\cvsection{Cursos}
+\input{../data/workshops.tex}
+
+\vfill
+
+\end{document}
