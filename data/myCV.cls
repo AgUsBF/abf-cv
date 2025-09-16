@@ -1,9 +1,11 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{myCV}[myCV]
 
+
 %-------------------------------------------------------------------------------
 %                            BASE CLASS DEFINITIONS
 %-------------------------------------------------------------------------------
+
 \RequirePackage[dvipsnames, svgnames, x11names]{xcolor}
 \RequirePackage[absolute,overlay]{textpos}
 \RequirePackage{xkeyval}
@@ -96,9 +98,11 @@
 	right=\leftrightmargin,
 }
 
+
 %-------------------------------------------------------------------------------
 %                              REQUIRED PACKAGES
 %-------------------------------------------------------------------------------
+
 \RequirePackage[sfdefault]{ClearSans}
 \RequirePackage[texcoord]{eso-pic}
 \RequirePackage{titlesec}
@@ -131,9 +135,11 @@
 	\RequirePackage{fontawesome}
 \fi
 
+
 %-------------------------------------------------------------------------------
 %                          DERIVED COLOR DEFINITIONS
 %-------------------------------------------------------------------------------
+
 % profile section color (sidebar/left column)
 \colorlet{pseccolor}{maincolor!90}
 % color used for all icon arguments
@@ -141,9 +147,11 @@
 % color definitions for TikZ drawings
 \colorlet{skillbg}{black!25}
 
+
 %-------------------------------------------------------------------------------
 %                      GLOBAL LAYOUT AND HEADINGS STYLE
 %-------------------------------------------------------------------------------
+
 % remove headers and footers
 \pagestyle{empty}
 
@@ -166,9 +174,11 @@
 	{\color{pseccolor}\normalfont\huge}{}{0pt}{\color{pseccolor}\sectionline}
 \titlespacing*{\subsubsection}{0pt}{1ex}{1ex}
 
+
 %-------------------------------------------------------------------------------
 %                              SIDEBAR ELEMENTS
 %-------------------------------------------------------------------------------
+
 \newcommand*{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand*{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 \newcommand{\plotprofilepicture}{}
@@ -310,6 +320,7 @@
 %-------------------------------------------------------------------------------
 %                               SIDEBAR LAYOUT
 %-------------------------------------------------------------------------------
+
 \newcommand{\drawSidebarBG}{
 	\AddToShipoutPictureBG*{%
 		\begin{tikzpicture}[remember picture, overlay]
@@ -372,9 +383,11 @@
 	\end{sidebar}
 }
 
+
 %-------------------------------------------------------------------------------
 %                              LIST ENVIRONMENTS
 %-------------------------------------------------------------------------------
+
 \setlength{\tabcolsep}{0pt}
 
 \newenvironment{cvtable}[1][1]{
