@@ -1,14 +1,12 @@
 # 💼 My CV formatted in $\LaTeX$
 
-## 🌐 Repo Structure
+## ⚠️ Important: Repository Workflow
 
-This repository consists of 3 branches:
+This repository uses an unconventional workflow: the `main` branch does **not** contain a stable or usable version of the CV. Its main purpose is to store shared files (such as data, styles, images) that are used by the `short-version` and `long-version` branches.
 
-- `main`: Contains the shared files between the other 2 branches.
-- `short-version`: Contains the files for the short version of the CV.
-- `long-version`: Contains the files for the long version of the CV.
+To obtain a functional CV, switch to the desired branch (`short-version` or `long-version`). These branches contain all the necessary files to compile the complete CV, either in its *short* (IT-oriented) or *long* (academic-focused) version.
 
-The *short* branch generates a one page pdf with less detail and oriented towards IT, while the *long* version contains more academic details, scientific publications and a broader variety of workshops and courses.
+## 🌐 Repository Structure
 
 The basic structure is:
 
@@ -31,14 +29,14 @@ The basic structure is:
 └── README.md
 ```
 
-## 💻 Usage
+## 💻 Workflow & Usage
 
-- Shared files that live in `main` should be tracked in this branch.
-- Enter the branch you are interested in (long/short).
-- Pull changes from `main`.
-- Enter the folder for the desired language (eng/esp).
-- Run `lualatex texfilename.tex` or `xelatex texfilename.tex` to compile.
-- It can also be compiled with TexMaker or any other $\TeX$ editor.
+1. Make changes to shared files in `main` if necessary.
+2. Switch to the desired branch (`short-version` or `long-version`).
+3. Pull updates from `main` to get the latest shared files.
+4. Make changes to that branch if necessary.
+5. Enter the folder for the desired language (eng/esp).
+6. Compile by running `lualatex texfilename.tex` or `xelatex texfilename.tex`. It can also be compiled with TexMaker or any other $\TeX$ editor.
 
 ## 📄 References
 
