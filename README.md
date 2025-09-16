@@ -1,10 +1,9 @@
 # 💼 My CV formatted in $\LaTeX$
 
-## ⚠️ Important: Repository Workflow
-
-This repository uses an unconventional workflow: the `main` branch does **not** contain a stable or usable version of the CV. Its main purpose is to store shared files (such as data, styles, images) that are used by the `short-version` and `long-version` branches.
-
-To obtain a functional CV, switch to the desired branch (`short-version` or `long-version`). These branches contain all the necessary files to compile the complete CV, either in its *short* (IT-oriented) or *long* (academic-focused) version.
+> [!NOTE]
+> This repository uses an unconventional workflow: The `main` branch does **not** contain a stable or usable version of the CV. Its main purpose is to store shared files (such as data, styles, images) that are used by the `short-version` and `long-version` branches.
+>
+> To obtain a functional CV, switch to the desired branch (`short-version` or `long-version`). These branches contain all the necessary files to compile the complete CV, either in its *short* (IT-oriented) or *long* (academic-focused) version.
 
 ## 🌐 Repository Structure
 
