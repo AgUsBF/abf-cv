@@ -32,7 +32,7 @@ The basic structure is:
 
 1. Make changes to shared files in `main` if necessary.
 2. Switch to the desired branch (`short-version` or `long-version`).
-3. Pull updates from `main` to get the latest shared files.
+3. Merge updates (`git merge main`) to get the latest shared files.
 4. Make changes to that branch if necessary.
 5. Enter the folder for the desired language (eng/esp).
 6. Compile by running `lualatex texfilename.tex` or `xelatex texfilename.tex`. It can also be compiled with TexMaker or any other $\TeX$ editor.
